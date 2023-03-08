@@ -1,14 +1,11 @@
 package com.myjavaproject.swordmystery.logic.objects;
 
-
-
 public class CharacterRecord {
 
     public final int levelsForHpUpgrade;
     public final int levelsForHpRegenUpgrade;
     public final int levelsForAttackUpgrade;
     public final int levelsForBonusSpawnUpgrade;
-
     public final String name;
 
     public CharacterRecord(int lvlHp, int lvlRegen, int lvlAttack, int lvlBonus, String _name)

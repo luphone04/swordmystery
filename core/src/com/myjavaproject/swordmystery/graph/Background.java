@@ -9,7 +9,6 @@ public class Background {
     {
 
     }
-
     public void draw(Stage stage, Resources res)
     {
         stage.getBatch().begin();

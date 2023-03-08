@@ -55,7 +55,6 @@ public class GameLogic implements Enemy.EnemyAttackListener, WarningEffect.Warni
         gameTime = 0;
         lastBonusSpawnTime = 0;
     }
-
     public Player getPlayer()
     {
         return player;

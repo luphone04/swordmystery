@@ -5,9 +5,6 @@ import com.badlogic.gdx.utils.Pool;
 import com.myjavaproject.swordmystery.Resources;
 import com.myjavaproject.swordmystery.graph.SizeEvaluator;
 
-/**
- * Created by comrad_gremlin on 9/9/2016.
- */
 public class WarningEffect extends Effect {
 
     private static final float WARNING_TIME = 0.75f;

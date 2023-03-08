@@ -9,16 +9,12 @@ import com.myjavaproject.swordmystery.graph.SizeEvaluator;
 import com.myjavaproject.swordmystery.logic.GameLogic;
 import com.myjavaproject.swordmystery.logic.GameProgress;
 
-
 public class Enemy extends Character {
-
     private static final float BASE_ATTACK_TIME = 1.0f;
     private static final float WARM_UP_TIME = 2.0f;
-
     private float timeSinceAttack;
     private float nextAttackTime;
     private int lives;
-
     private static float SCALE_TIME = 0.5f;
 
     private boolean targetTiles[][];

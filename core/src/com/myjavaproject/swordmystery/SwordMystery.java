@@ -12,7 +12,6 @@ import com.myjavaproject.swordmystery.screens.GameScreen;
 
 public class SwordMystery extends Game {
 	public Resources res;
-
 	@Override
 	public void create () {
 		res = new Resources();
@@ -20,7 +19,6 @@ public class SwordMystery extends Game {
 		SoundManager.LoadSounds();
 		setScreen(new CharacterSelectionScreen(this));
 	}
-
 	@Override
 	public void dispose () {
 		GameProgress.Save();

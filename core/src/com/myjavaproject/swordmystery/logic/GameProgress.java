@@ -8,18 +8,14 @@ import com.myjavaproject.swordmystery.logic.objects.CharacterRecord;
 public class GameProgress {
 
     public static final int MAX_SOUND_VOLUME = 3;
-
     public static int playerLives = 3;
     public static int currentCharacter = 0;
     public static int currentGold = 0;
     public static int soundVolume = MAX_SOUND_VOLUME;
-
     public static final int CHARACTER_PRICE = 1000;
     public static int levels[]; // level of each character, 0 = locked
     public static int stages[]; // how far the character has progressed
-
     private static final String PROGRESS_SAVE_NAME = "progress";
-
     private static final String SAVE_KEY_LIVES = "lives";
     private static final String SAVE_KEY_PLAYER_LEVEL = "playerlevel";
     private static final String SAVE_KEY_PLAYER_STAGE = "playerstage";

@@ -5,16 +5,11 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.myjavaproject.swordmystery.Resources;
 import com.myjavaproject.swordmystery.graph.SizeEvaluator;
 import com.myjavaproject.swordmystery.logic.GameProgress;
-
-
 public class Player extends Character {
-
     private int fieldX;
     private int fieldY;
-
     private boolean winning = false;
     private float winTime = 0;
-
     private final int max_lives;
     public static final float APPROACH_TIME = 0.5f;
 

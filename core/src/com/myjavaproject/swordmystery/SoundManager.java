@@ -6,9 +6,6 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.math.MathUtils;
 import com.myjavaproject.swordmystery.logic.GameProgress;
-
-
-
 public class SoundManager {
     /*
         swing.wav -> swing0.ogg
@@ -24,10 +21,8 @@ public class SoundManager {
         Battle Music: http://opengameart.org/content/8-bit-music-pack-loopable#comment-55568 by CodeManu
         Footsteps: http://opengameart.org/content/fantozzis-footsteps-grasssand-stone by Fantozzi (submitted by qubodup)
      */
-
     public static AssetManager assets = new AssetManager();
     private static Music bMusic = null;
-
     public static void LoadSounds()
     {
         for (int i = 0; i < 3; i++)
@@ -41,7 +36,6 @@ public class SoundManager {
 
         assets.finishLoading();
     }
-
     public static void ReleaseSounds()
     {
         assets.dispose();
@@ -54,7 +48,6 @@ public class SoundManager {
             sound.play(MathUtils.random(min, max) * GameProgress.soundVolume / GameProgress.MAX_SOUND_VOLUME);
         }
     }
-
     public static void PlaySwingSound()
     {
         Sound s = assets.get("music/swing" + MathUtils.random(2) + ".ogg", Sound.class);
@@ -87,7 +80,6 @@ public class SoundManager {
             bMusic = null;
         }
     }
-
     public static void PlayBattleMusic()
     {
         bMusic = Gdx.audio.newMusic(Gdx.files.internal("music/music" + MathUtils.random(5) + ".mp3"));
@@ -95,7 +87,6 @@ public class SoundManager {
         bMusic.setVolume((float)GameProgress.soundVolume / GameProgress.MAX_SOUND_VOLUME);
         bMusic.play();
     }
-
     public static void AdjustVolume()
     {
         GameProgress.ToggleVolume();

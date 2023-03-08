@@ -8,13 +8,10 @@ import com.myjavaproject.swordmystery.Resources;
 public class SizeEvaluator {
     private Stage measuredStage;
     private Resources resources;
-
     public static final int BASE_MARGIN = 3;
-
     // 4x4
     private final int maxTileBaseX;
     private final int maxTileBaseY;
-
     private float rightSideX;
 
     public SizeEvaluator(Stage _stage,

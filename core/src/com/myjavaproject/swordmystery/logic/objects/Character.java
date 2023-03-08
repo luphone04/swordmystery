@@ -4,9 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.myjavaproject.swordmystery.SoundManager;
 
 public class Character extends Sprite {
-
     protected int lives;
-
     protected float timeAlive;
     private float timeOfDmgTaken;
 

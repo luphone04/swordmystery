@@ -2,10 +2,6 @@ package com.myjavaproject.swordmystery.screens;
 
 import com.badlogic.gdx.Screen;
 import com.myjavaproject.swordmystery.SwordMystery;
-
-/**
- * Created by comrad_gremlin on 9/6/2016.
- */
 public class DefaultScreen implements Screen {
 
     protected SwordMystery game;

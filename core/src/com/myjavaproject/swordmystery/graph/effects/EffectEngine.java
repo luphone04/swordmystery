@@ -6,7 +6,6 @@ import com.myjavaproject.swordmystery.graph.SizeEvaluator;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class EffectEngine {
 
     List<Effect> effects;
