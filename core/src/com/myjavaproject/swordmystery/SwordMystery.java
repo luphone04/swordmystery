@@ -1,31 +1,30 @@
 package com.myjavaproject.swordmystery;
 
 import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.utils.ScreenUtils;
+import com.myjavaproject.swordmystery.logic.GameProgress;
+import com.myjavaproject.swordmystery.screens.CharacterSelectionScreen;
+import com.myjavaproject.swordmystery.screens.GameScreen;
 
-public class SwordMystery extends ApplicationAdapter {
-	SpriteBatch batch;
-	Texture img;
-	
+public class SwordMystery extends Game {
+	public Resources res;
+
 	@Override
 	public void create () {
-		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
+		res = new Resources();
+		GameProgress.Load();
+		SoundManager.LoadSounds();
+		setScreen(new CharacterSelectionScreen(this));
 	}
 
 	@Override
-	public void render () {
-		ScreenUtils.clear(1, 0, 0, 1);
-		batch.begin();
-		batch.draw(img, 0, 0);
-		batch.end();
-	}
-	
-	@Override
 	public void dispose () {
-		batch.dispose();
-		img.dispose();
+		GameProgress.Save();
+		res.dispose();
+		SoundManager.ReleaseSounds();
 	}
 }
